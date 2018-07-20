@@ -1,0 +1,380 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+header,nav
+	background-color: #fff
+
+body
+	max-width: $wrap-width
+	margin: 0 auto
+
+			// HEADER
+
+header
+	padding: 5px 15px 10px 15px
+
+.header-logo
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: flex-end
+
+.header-info
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+.header-costing
+	display: flex
+	align-items: flex-end
+	& a
+		font-size: 23px
+		text-decoration: underline
+		color: $link-color
+		margin: 12px 70px
+		letter-spacing: 1.2px
+
+
+
+.header-contacts
+	margin-bottom: 10px
+
+	& p
+		font-size: 16px
+		text-align: right
+		margin-bottom: 0
+
+	& span
+		font-size: 31px
+
+			// NAVIGATION
+
+nav ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: nowrap
+	
+
+	& li
+
+		font-size: $nav-size
+		width: 100%
+		border-right: 1px solid black
+
+
+		& a
+
+			text-decoration: none
+			display: flex
+			justify-content: center
+			flex-wrap: nowrap
+			flex-direction: row
+			padding-top: 15px
+			padding-bottom: 15px
+			color: $nav-color
+
+		& a:hover
+			color: #fff
+
+	& li:last-child
+		border-right: none
+
+	& li:hover
+		background-color: $nav-hover
+		color: #fff
+.wrapper
+	display: flex
+.main-title
+	color: #4b4b4b
+	margin-bottom: 35px
+
+	& h1
+		font-size: 64px
+		margin-top: 40px
+		margin-bottom: 0
+		letter-spacing: 1.3px
+		font-weight: 400
+
+	& h2
+		margin-top: 0
+		font-size: 26px
+		font-weight: 400
+		letter-spacing: 0.5px
+
+.main-left-sidebar
+	height: 20%
+	background-color: #fff
+	margin-right: 25px
+	padding: 18px 15px 24px 24px
+	& ul
+		padding: 0
+		list-style: none
+		& li
+			font-size: 16px
+			width: 100%
+			margin-right: 25px
+			
+
+			& a
+				text-decoration: underline
+				color: $sidebar-txt
+				height: 100%
+				width: 100%
+				padding-top: 8px
+				padding-bottom: 8px
+				display: inline-block
+			& a:hover
+				color: #eb5825
+
+
+.main-left-sidebar p
+	font-size: 20px
+	margin-top: 0
+	margin-bottom: 15px
+
+.main-content
+	width: 100%
+	display: flex
+	flex-direction: column
+
+.main-content-box
+	display: flex
+	flex-direction: column
+	background-color: #fff
+	max-width: 100%
+	padding: 23px 23px 110px 23px
+	& h3
+		font-size: 26px
+		color: #484848
+		font-weight: 400
+		margin-top: 0
+.main-content-info
+	display: flex
+	flex-direction: row
+	& ul
+		font-size: 14px
+		padding-left: 0
+.main-conent-img
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 38%
+	margin-right: 42px
+	& img
+		margin: 0 auto
+	& span
+		font-size: 18px
+		color: $tree
+		margin-top: 43px
+		
+
+.main-content-descripton
+	& ul
+		padding-left: 20px
+		margin: 0
+		margin-bottom: 30px
+	& li
+		color: #eb5825
+		line-height: 28px
+		& span
+			color: #484848
+
+.compilation h3
+	font-size: 20px
+
+.colors a:last-child
+	margin-right: 0
+
+.colors
+	display: flex
+	flex-direction: row
+.colors a
+	margin-right: 4px
+	width: 60px
+	height: 60px
+	&:hover
+		border: 2px solid #eb5825
+		border-radius: 10px
+	&:focus
+		border: 1px solid #eb5825
+		border-radius: 10px
+.color-1
+	background: url('../img/colorstree.png') no-repeat
+	background-position: -414px 0
+	&:focus
+		background-position: 0
+	
+
+.color-2
+	background: url('../img/colorstree.png') no-repeat
+	background-position: -69px 0
+	&:focus
+		background-position: 0
+
+.color-3
+	background: url('../img/colorstree.png') no-repeat
+	background-position: -137px 0
+	&:focus
+		background-position: 0
+
+.color-4
+	background: url('../img/colorstree.png') no-repeat
+	background-position: -206px 0
+	&:focus
+		background-position: 0
+
+.color-5
+	background: url('../img/colorstree.png') no-repeat
+	background-position: -275px 0
+	&:focus
+		background-position: 0
+
+.color-6
+	background: url('../img/colorstree.png') no-repeat
+	background-position: -344px 0
+	&:focus
+		background-position: 0
+
+.color-7
+	background: url('../img/colorstree.png') no-repeat
+	background-position: -413px 0
+	&:focus
+		background-position: 0
+.more
+	margin-top: 24px
+	
+.compilation-button
+	margin-top: 60px
+	& a
+		font-size: 18px
+		padding: 10px 40px
+		background-color: $button-color
+		border-radius: 7px
+		text-decoration: none
+		color: #fff
+		&:hover
+			color: #eb5825
+			background-color: #fff
+			border: 2px solid #eb5825
+.compilation-consult
+	margin-top: 20px
+	& a
+		color: $sidebar-txt
+
+.info-box
+	margin-top: 25px
+	padding: 28px
+	padding-bottom: 40px
+	background-color: #fff
+	& h3
+		margin-top: 5px
+		margin-bottom: 15px
+		font-size: 26px
+		font-weight: 400
+.info-wrap
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	margin-bottom: 21px
+	& p
+		width: 90%
+		margin: 0	
+	& img
+		margin-right: 30px
+		height: 100%
+.last
+	margin-bottom: 30px
+
+	
+.info-wrap-two
+	// margin-top: 27px
+	margin-bottom: 4px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	& p
+		width: 93.5%
+		margin: 4px
+	& img
+		height: 100%
+.title-content
+	display: flex
+	justify-content: space-between
+	margin-top: 40px
+	margin-bottom: 18px
+	& h3
+		font-size: 26px
+		color: #484848
+		font-weight: 400
+		margin: 0
+	& a
+		color: $link-color
+		font-size: 16px
+		margin-top: 10px
+.comments
+	padding: 28px
+	background-color: #fff
+	display: flex
+	flex-direction: column
+.info-comment
+	display: flex
+	flex-direction: column
+	& p
+		font-size: 16px
+		margin: 2px
+	& span
+		color: #8a8a8a
+
+.productRate 
+	background: url('../img/star-off.png')
+	width: 80px
+	height: 16px
+	margin-top: 10px
+	cursor: pointer
+
+.productRate div 
+	background: url('../img/star-on.png')
+	width: 0
+	height: 100%
+.read
+	font-size: 16px
+	& a
+		text-decoration-style: dashed
+		color: #eb5825
+	& span
+		background: url('../img/arrow-down.png')
+		background-repeat: no-repeat
+		background-position: cover
+		position: relative
+		top: 2px
+		display: inline-block
+		width: 13px
+		height: 13px
+
+.comments-button
+	margin-top: 45px
+	margin-bottom: 20px
+.comments-button div
+	& a
+		text-decoration: none
+		border-radius: 8px
+		font-size: 16px
+		font-weight: 400
+		color: #fff
+		padding: 10px 25px
+		background-color: $button-color
+		&:hover
+			color: #eb5825
+			background-color: #fff
+			border: 2px solid #eb5825
+#menu_btn
+	display: none
+
+@import "media" // Всегда в конце
